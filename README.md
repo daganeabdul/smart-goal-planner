@@ -1,4 +1,6 @@
 Smart Goal Planner
+
+
 A  web application built with React for managing savings goals, tracking progress, and developing smart financial habits.
 
  By Abdirahman Dagane 
