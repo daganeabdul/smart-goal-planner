@@ -10,31 +10,38 @@ A  web application built with React for managing savings goals, tracking progres
 
 [live check out](https://daganeabdul.github.io/smart-goal-planner/)
 
+
  Project Description
+ 
 What is this project?
+
  Smart Goal Planner is a React-based app that helps users set, manage, and track multiple savings goals. Each goal can have a name, target amount, deposit history, progress bar, and more. It promotes better financial planning using a clean and interactive interface.
 
  How Does It Work?
+ 
 Users can:
-Add a new savings goal (e.g., “Buy a Laptop”, “Vacation Trip”)
+
+  Add a new savings goal (e.g., “Buy a Laptop”, “Vacation Trip”)
 
 
-Allocate deposits to each goal
+  Allocate deposits to each goal
 
 
-View a progress bar showing percentage saved
+  View a progress bar showing percentage saved
 
 
-Edit or delete goals
+ Edit or delete goals
 
 
-View history of deposits (with timestamps)
+ View history of deposits (with timestamps)
 
 
 The application uses React components, state management, and local JSON Server (db.json) to persist data (CRUD).
 
  Who Are the Users?
+
 This app is designed for:
+
 Individuals planning multiple financial goals
 
 
@@ -48,6 +55,8 @@ Teams building collaborative frontend apps
  Project Goals
  
 To provide a full-stack-like experience with:
+
+
 Component design using React
 
 
@@ -68,6 +77,8 @@ Working with local APIs (via JSON Server)
 
  
 Core Features
+
+
 Add, view, edit, delete savings goals
 
 
@@ -81,6 +92,8 @@ CRUD with db.json
 
 
 Stretch Features
+
+
 Filter by goal status (e.g., “In Progress”, “Completed”)
 
 
@@ -146,6 +159,8 @@ src/
  Testing
  
 Checklist for manual testing:
+
+
 Add goals and check appearance
 
 
