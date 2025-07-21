@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import GoalList from './componenets/GoalList';
-import AddGoalForm from './componenets/AddGoalForm';
-import DepositForm from './componenets/DepositForm';
-import Overview from './componenets/overview';
+import GoalList from './components/GoalList';
+import AddGoalForm from './components/AddGoalForm';
+import DepositForm from './components/DepositForm';
+import Overview from './components/overview';
 import './App.css';
 
 function App() {
