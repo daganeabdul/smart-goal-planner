@@ -99,55 +99,82 @@ cd smart-goal-planner](https://github.com/daganeabdul/smart-goal-planner.git)
 
 2. Install Dependencies
 
-npm install
+       npm install
 
 3. Start the JSON Server
 
-npx json-server --watch db.json --port 3001
+        npx json-server --watch db.json --port 3001
 
 4. Run the React App
-npm run dev
+   
+        npm run dev
+
 
 
  Project Structure
 smart-goal-planner/
 
+dist/
+node_modile/
 public/
-   index.html
-
 src/
-  components/
-     App.jsx
-     index.js
-
- db.json         
-.gitignore
-package.json
-README.md
+   assests/
+   components/
+       -AddGoadForm.jsx
+       -DepositeForm.jsx
+       -GoalCard.jsx
+       -GoalList.jsx
+       -overview.jsx
+  app.css
+  app.jsx
+  index.css
+  main.jsx
+  .gitignore
+ index.html
+ package.json
+ README.md
+ vite.config.js
 
 
  Testing
+ 
 Checklist for manual testing:
 Add goals and check appearance
 
 
-Edit goal info and ensure changes persist
+  Edit goal info and ensure changes persist
+
+  Make a deposit and verify update
+
+  Delete goal and check list updates
+
+  Refresh browser – data should persist
+
+  Use console logs or React DevTools to debug components and props.
 
 
-Make a deposit and verify update
+ 
+MIT License
 
+Copyright (c) 2025 daganeabdul
 
-Delete goal and check list updates
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Refresh browser – data should persist
-
-
-Use console logs or React DevTools to debug components and props.
-
-
- License
-This project is licensed under the MIT License – free to use, share, and modify.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
  
