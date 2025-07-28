@@ -123,7 +123,7 @@ cd smart-goal-planner](https://github.com/daganeabdul/smart-goal-planner.git)
 
 3. Start the JSON Server
 
-        npx json-server --watch db.json --port 3001
+        npm start
 
 4. Run the React App
    
