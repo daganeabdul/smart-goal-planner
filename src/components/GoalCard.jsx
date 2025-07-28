@@ -6,7 +6,7 @@ function GoalCard({ goal, setGoals }) {
     const isOverdue = new Date(deadline) < new Date() && savedAmount < targetAmount;
   
     function handleDelete() {
-      fetch(`http://localhost:3000/goals/${id}`, { method: 'DELETE' })
+      fetch(`https://smart-goal-api-ufvu.onrender.com/goals/${id}`, { method: 'DELETE' })
         .then(() => {
           setGoals((prev) => prev.filter((g) => g.id !== id));
         });

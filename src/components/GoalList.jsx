@@ -1,6 +1,6 @@
 export default function GoalList({ goals, setGoals }) {
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/goals/${id}`, {
+    fetch(`https://smart-goal-api-ufvu.onrender.com/goals/${id}`, {
       method: 'DELETE'
     })
       .then(() => setGoals(goals.filter(goal => goal.id !== id)))

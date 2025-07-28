@@ -13,7 +13,7 @@ function DepositForm({ goals, setGoals }) {
     const selectedGoal = goals.find(goal => goal.id === goalId);
     const newSavedAmount = parseFloat(selectedGoal.savedAmount) + parseFloat(amount);
 
-    fetch(`http://localhost:3000/goals/${goalId}`, {
+    fetch(`https://smart-goal-api-ufvu.onrender.com/goals/${goalId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ function DepositForm({ goals, setGoals }) {
     })
       .then(res => res.json())
       .then(updatedGoal => {
-        // Update the state so UI reflects new savedAmount
+        
         const updatedGoals = goals.map(goal =>
           goal.id === updatedGoal.id ? updatedGoal : goal
         );
