@@ -7,7 +7,7 @@ export default function AddGoalForm({ setGoals }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3000/goals', {
+    fetch('https://smart-goal-api-ufvu.onrender.com/goals', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, savedAmount: Number(form.savedAmount) })
