@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { BASE_URL } from "./config";
 
 function DepositForm({ goals, setGoals }) {
   const [goalId, setGoalId] = useState('');
@@ -13,13 +14,14 @@ function DepositForm({ goals, setGoals }) {
     const selectedGoal = goals.find(goal => goal.id === goalId);
     const newSavedAmount = parseFloat(selectedGoal.savedAmount) + parseFloat(amount);
 
-    fetch(`https://smart-goal-api-ufvu.onrender.com/goals/${goalId}`, {
+    fetch(`${BASE_URL}/goals/${goalId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ savedAmount: newSavedAmount }),
     })
+    
       .then(res => res.json())
       .then(updatedGoal => {
         

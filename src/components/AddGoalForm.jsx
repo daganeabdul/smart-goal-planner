@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import { BASE_URL } from "./config";
 
 export default function AddGoalForm({ setGoals }) {
   const [form, setForm] = useState({
     name: '', targetAmount: '', savedAmount: 0, category: '', deadline: ''
   });
+  
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://smart-goal-api-ufvu.onrender.com/goals', {
+    fetch(`${BASE_URL}/goals`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, savedAmount: Number(form.savedAmount) })
@@ -16,6 +19,7 @@ export default function AddGoalForm({ setGoals }) {
       .then(newGoal => setGoals(prev => [...prev, newGoal]))
       .catch(console.error);
   };
+  
 
   return (
     <form onSubmit={handleSubmit}>
