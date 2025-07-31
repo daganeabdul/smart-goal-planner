@@ -1,1 +1,1 @@
-export const BASE_URL = "https://smart-goal-api-ufvu.onrender.com/goals";
+export const BASE_URL = "https://smart-goal-api-ufvu.onrender.com/";
