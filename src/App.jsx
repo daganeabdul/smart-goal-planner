@@ -9,6 +9,7 @@ function App() {
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {
+    
     fetch('https://smart-goal-api-ufvu.onrender.com/goals')
       .then((res) => res.json())
       .then(setGoals)
